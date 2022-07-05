@@ -138,10 +138,7 @@ Ans:
 # This is Comment But Shortcut for single Comment is ctrl+/ Shift+RIght Arrow for selection
 # print(f"Data Type of {name} is"+str(type(name)))
 
-age = 25
-weight = 78.56
-name = "Ali"
-names = ['Ali','Omer','Khan']
+
 
 
 
@@ -164,13 +161,70 @@ Name of Brackets
 
 
 # This is not a Multiple Data actually it's only single value because written within Double Quotes.
-name = "Omer, Ali, Khan"
+# name = "Omer, Ali, Khan"
+age = 25
+weight = 78.56
+# name = "Ali"
+# names = ['Ali','Omer','Khan']
 
-print(type(age), type(weight), type(name), type(names))
+# floatToStr = str(weight)
+# print(type(floatToStr))
+
+# print(type(age), type(weight), type(name), type(names))
+
+"""
+List Index:
+            Actually, In simple words indexing is just a like a Position or Location of any list item or element.
+        IMPORTANT:
+                    List Index is always start from Zero (0).
+                    
+        List Indexing Syntax:
+                    List_Name[Index_Number]                
+    Q: How to access data from List?
+    Ans:
+        By Using List
+        
+    Slicing:
+            "BILAL"
+    Slicing Syntax:
+                StringName OR ListName[start-index:stop-index]
+        IMPORTANT POINT IN SLICING:
+        ENDING-INDEX is excluded
+         
+"""
+# names = ['Ali','Omer','Khan']
+# print(names[1])
+# name = "Omer, Ali, Khan"
+# print(name[5])
+# print(name[0:4])
+
+# names = ['Ali','Omer','Khan']
+# print(names[0:2])
+
+"""
+Arithmetic Operators in Python 
++
+-
+Division /
+Multiplication *
+Modulus % 
+What is Modulus ?
+Ans:
+    In simple words, Modulus is Remainder in division
+    Exp:
+        5/2
+        In this case our Remainder is 1 so actually this One is Our Modulus.
+    
+
+"""
 
 
-
-
-
-
+# Implementation of Arithmetic Operators
+a = 100
+b = 50
+print("Sum is :"+str(a+b))
+print("SUB is :"+str(a-b))
+print("MUL is :"+str(a*b))
+print("DIVISION is: "+str(int(a/b)))
+print("Remainder OR Modulus is: "+str(100%51))
 
