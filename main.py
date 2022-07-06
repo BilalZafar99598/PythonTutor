@@ -220,11 +220,90 @@ Ans:
 
 
 # Implementation of Arithmetic Operators
-a = 100
-b = 50
-print("Sum is :"+str(a+b))
-print("SUB is :"+str(a-b))
-print("MUL is :"+str(a*b))
-print("DIVISION is: "+str(int(a/b)))
-print("Remainder OR Modulus is: "+str(100%51))
+# a = 100
+# b = 50
+# print("Sum is :"+str(a+b))
+# print("SUB is :"+str(a-b))
+# print("MUL is :"+str(a*b))
+# print("DIVISION is: "+str(int(a/b)))
+# print("Remainder OR Modulus is: "+str(100%51))
+
+"""
+Assign single value to multiple variables
+"""
+# a = 10
+# b = 10
+# c = 10
+# a = b = c = 20
+# print(f"Value of A is: {a}")
+
+# animals = ["Cat","Dog","Lion"]
+
+# One D Array, 1 Dimension
+# print(animals[0][0:2])
+# print(animals[1])
+# print(animals[2])
+
+
+"""
+List Unpacking
+"""
+# animals = ["Cat","Dog","Lion"]
+# cat,dog,lion = animals
+# print(cat[0:2])
+# print(dog)
+# print(lion)
+
+# Q: How to print list in Reverse Order
+
+# print(animals[::-1])
+
+# val = "0123456789"
+# print(val[::3])
+# numbers = [0,1,2,3,4,5,6,7,8,9,10]
+
+# Built-In Function
+# Q: How to print minimum value from Python List
+# print(min(numbers))
+
+# Q: How to print maximum value from Python List
+# print(max(numbers))
+# print(numbers[::3])
+
+
+# Q: What is Append Function in Python ?
+# Append Function is always insert data in list at Last Index
+# empt_list = []
+# empt_list.append("Ali")
+# empt_list.append("Omer")
+# empt_list.append("Haris")
+# empt_list.append("Haris")
+# print(empt_list)
+
+# Print only unique data ignore duplicate data
+
+
+# DataType Set
+# list_to_set = set(empt_list)
+# print(type(list_to_set))
+
+# print(set(empt_list))
+
+# Q: Find Even and Odd Number ?
+# Keywords OR Reserve Words
+# We cannnot use keywords as a Variable Name
+# if for else in
+
+# Variable Cases
+# Camel Case
+fullNameOfStudent = "Ali"
+
+# Pascal Case
+FullNameOfStudent = "Bilal"
+
+# Snake Case
+full_name_of_student = "Saad"
+print(fullNameOfStudent,FullNameOfStudent,full_name_of_student)
+
+
 
