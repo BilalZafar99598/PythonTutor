@@ -294,16 +294,100 @@ List Unpacking
 # We cannnot use keywords as a Variable Name
 # if for else in
 
-# Variable Cases
-# Camel Case
-fullNameOfStudent = "Ali"
+# # Variable Cases
+# # Camel Case
+# fullNameOfStudent = "Ali"
+#
+# # Pascal Case
+# FullNameOfStudent = "Bilal"
+#
+# # Snake Case
+# full_name_of_student = "Saad"
+# print(fullNameOfStudent,FullNameOfStudent,full_name_of_student)
 
-# Pascal Case
-FullNameOfStudent = "Bilal"
+"""
+Q: Why we use IF-ELSE statement?
+Ans:
+    When we want to execute our program based on any specific condition then we use it or make decision.
+    
+    Syntax:
+    if and else are keywords.
+    In Python there is a concept that is called Indentation.
+    Like in C++ how to use IF-ELSE statment block
+    if(specific_Condition)
+    {
+        Body of IF    
+    }
+    else
+    {
+        Body of Else
+    }
+    
+    Python's Syntax:
+    if specific_Condition:
+        Write your code 
+        
+    else:
+        Else Part    
+    
+Q: Find Even and Odd Value?
+Ans:
+    Hint:
+        1. IF-ELSE Statement
+        2. Arthimetic Operator
+ 
+"""
+# digit = 50
+# if digit%2 == 0:
+#     print("Your {Number} is Even")
+# else:
+#     print("Your Number is Odd")
 
-# Snake Case
-full_name_of_student = "Saad"
-print(fullNameOfStudent,FullNameOfStudent,full_name_of_student)
+
+"""
+Q: Take value from user and find Even/Odd Value?
+Ans:
+    Hint:
+        use input method
+        
+        By Default Input function gives us String value
+"""
+# digit = int(input("Please Enter your Number:"))
+# if digit%2 == 0:
+#     print(f"Your Number {digit} is Even")
+# else:
+#     print(f"Your Number {digit} is Odd")
+
+
+"""
+String's Built-In Functions
+lower()
+"""
+name = "bilal"
+
+# print(name.lower())
+# print(name.capitalize())
+# print(name.upper())
+# print(name.isdigit())
+
+# a = "10A"
+# print(a.isdigit())
+
+# print(len(name))
+# Python is a Case-Sensitive Langugae
+# a and A are not Equal
+msg = "Hello\tMy\tName\tis\tBilal"
+# print(msg.count("L"))
+# print(msg.find("hello"))
+# if find() function is return -1 then it means sunstring not found
+# print(msg.index("hello"))
+# but in index() function if substring not found it gives us ValueError Exception.
+# print(msg.endswith("L"))
+print(msg.expandtabs())
+
+
+
+
 
 
 
