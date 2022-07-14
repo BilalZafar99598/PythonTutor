@@ -376,15 +376,73 @@ name = "bilal"
 # print(len(name))
 # Python is a Case-Sensitive Langugae
 # a and A are not Equal
-msg = "Hello\tMy\tName\tis\tBilal"
+# msg = "Hello\tMy\tName\tis\tBilal"
 # print(msg.count("L"))
 # print(msg.find("hello"))
 # if find() function is return -1 then it means sunstring not found
 # print(msg.index("hello"))
 # but in index() function if substring not found it gives us ValueError Exception.
 # print(msg.endswith("L"))
-print(msg.expandtabs())
+# print(msg.expandtabs())
 
+"""
+Q: Find the Even Odd Values from given Python List and Separate Even List and Odd List?
+Ans:
+    if-else
+    3 Lists
+    Arthimetic Opt.
+    
+Loop are use for Iterations.
+Example 
+    Bilal
+    Bilal 
+    Bilal
+        
+
+"""
+
+
+# print("Bilal")
+# print("Bilal")
+# print("Bilal")
+# print("Bilal")
+# print("Bilal")
+"""
+Our code is reduntant 
+This is actually Code retundancy. So in programming we should avoid code retundancy.
+
+FOr Loop:
+        C++ Example:
+            for(i=2;i<=10;i++)
+            {
+                // Loop's Body
+            }
+
+        Python's Syntax:
+            for variable_name in range():
+                
+"in" is a keyword in Python
+
+IMPORTANT Point:
+    range() function by default start from 0 value so ending value will excluded
+    By Default Loop is increamented by 1 Value 
+"""
+# allNumbers = [1,2,3,4,5,6,7,8,9,10]
+# for i in range(20):
+#     print(i)
+evenList = []
+oddList = []
+allNumbers = [1,2,3,4,5,6,7,8,9,10,13,16,256,23324,21]
+# print(len(allNumbers))
+for i in range(len(allNumbers)):
+    if allNumbers[i]%2==0:
+        evenList.append(allNumbers[i])
+    else:
+        oddList.append(allNumbers[i])
+
+print(allNumbers)
+print(evenList)
+print(oddList)
 
 
 
