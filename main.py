@@ -430,19 +430,127 @@ IMPORTANT Point:
 # allNumbers = [1,2,3,4,5,6,7,8,9,10]
 # for i in range(20):
 #     print(i)
-evenList = []
-oddList = []
-allNumbers = [1,2,3,4,5,6,7,8,9,10,13,16,256,23324,21]
-# print(len(allNumbers))
-for i in range(len(allNumbers)):
-    if allNumbers[i]%2==0:
-        evenList.append(allNumbers[i])
-    else:
-        oddList.append(allNumbers[i])
+# evenList = []
+# oddList = []
+# allNumbers = [1,2,3,4,5,6,7,8,9,10,13,16,256,23324,21]
+# # print(len(allNumbers))
+# for i in range(len(allNumbers)):
+#     if allNumbers[i]%2==0:
+#         evenList.append(allNumbers[i])
+#     else:
+#         oddList.append(allNumbers[i])
+#
+# print(allNumbers)
+# print(evenList)
+# print(oddList)
 
-print(allNumbers)
-print(evenList)
-print(oddList)
+"""
+List's Built-In Functions in Python.
+
+reverse()
+sort()
+index()
+insert()
+
+"""
+# k = [1,2,3,4,5,6,7,8,9,10]
+# print(numbers[::-1])
+# print(reversed(list))
+
+nums = [3,5,2,1,10,10]
+# print(nums)
+
+# nums.append(123)
+# print(nums)
+
+# print(nums.count(10))
+
+# print(nums.index(3))
+
+# print(nums.insert(456,1))
+
+"""
+break and countine statement.
+Basically these are keywords,
+Break will break our for loop 
+and Continue will skip the current step
+"""
+
+# for i in range(10):
+#     if i==3:
+#         break
+#     else:
+#         print(i)
+
+"""
+Python Functions
+There are two types of functions in programming 
+1. Built-In functions
+2. User-Define Functions
+Syntax:
+        Function Definition
+        def functionName():
+            // Function's Body
+            return 
+            
+            
+        Function Invokement
+        Function Call
+"""
+# a = 450
+#
+# def add():
+#     """
+#
+#         Actually these variables are Local Variable
+#         a and b has only life in add() function
+#
+#     """
+#     # a = 550
+#     b = 110
+#     sum = a+b
+#     print(sum)
+#     # return sum
+#
+# """
+# If we want to use function then we must call that function
+# """
+# # add()
+#
+# add()
+"""
+Very Basic Calculator Functionality using Python Functions
+"""
+
+num1 = 100
+num2 = 50
+
+def sum():
+    return num1+num2
+
+def sub():
+    return num1-num2
+
+def mul():
+    return num1*num2
+
+def divi():
+    return num1/num2
+
+def remainder():
+    return num1%num2
+
+
+print("Sum Result is: "+str(sum()))
+print("Sub Result is: "+str(sub()))
+print("Mul Result is: "+str(mul()))
+print("Divi Result is: "+str(divi()))
+print("Modulus Result is: "+str(remainder()))
+
+
+
+
+
 
 
 
