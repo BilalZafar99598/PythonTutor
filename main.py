@@ -522,32 +522,122 @@ Syntax:
 Very Basic Calculator Functionality using Python Functions
 """
 
-num1 = 100
-num2 = 50
+# num1 = 100
+# num2 = 50
+#
+# def sum():
+#     return num1+num2
+#
+# def sub():
+#     return num1-num2
+#
+# def mul():
+#     return num1*num2
+#
+# def divi():
+#     return num1/num2
+#
+# def remainder():
+#     return num1%num2
+#
+#
+# print("Sum Result is: "+str(sum()))
+# print("Sub Result is: "+str(sub()))
+# print("Mul Result is: "+str(mul()))
+# print("Divi Result is: "+str(divi()))
+# print("Modulus Result is: "+str(remainder()))
 
-def sum():
-    return num1+num2
 
-def sub():
-    return num1-num2
-
-def mul():
-    return num1*num2
-
-def divi():
-    return num1/num2
-
-def remainder():
-    return num1%num2
+"""
+List's Built-In Functions
+"""
 
 
-print("Sum Result is: "+str(sum()))
-print("Sub Result is: "+str(sub()))
-print("Mul Result is: "+str(mul()))
-print("Divi Result is: "+str(divi()))
-print("Modulus Result is: "+str(remainder()))
+"""
+Q: How to reverse our Python List
+"""
+
+# digits = ["zero","one","two","three"]
+# digits.reverse()
+# print(digits[::-1])
+
+"""
+Q: How to sort our List in ascending order
+"""
+
+# intList = [0,40,1,32,23,13]
+# intList.sort()
+# print(intList)
+
+"""
+Q: How to sort our List in decending order
+"""
+# intList.sort(reverse=False)
+# print(intList)
 
 
+# digits = ["zero","one","two","three"]
+"""
+Q: How to add new Element in Python List
+When we will add new Element using append() function so element will add at the last index of the List
+
+"""
+# digits.append("four")
+# print(len(digits))
+
+"""
+Q: How to add new Element in Python List at Specific Position
+"""
+# digits.insert(1,"1")
+# print(digits)
+
+"""
+Q: How to clear Python List ?
+"""
+# digits.clear()
+# print(digits)
+
+# digitsCopy = digits.copy()
+# print(digitsCopy)
+
+"""
+Q: How to Access data from Python List?
+Ans:
+    Based on index number
+"""
+
+# digits = ["zero","one","two","three",1,2,3,4,5,3.14,5.2]
+# print(digits)
+# print(digits[0:3])
+"""
+Difference between Mutable and Immutable in Python?
+Python Lists are Changeable (Mutable)
+So List are Mutable in Python.
+Python's List are Ordered List
+Python List are allows us duplicate values and multiple datatypes of an element
+"""
+
+digits = ["zero","one","two","three",4]
+# del digits[3]
+# print(digits)
+# print(digits)
+# digits.pop()
+# print(digits)
+"""
+Differenece Between del and pop()
+Ans:
+    del is keyword and pop() is a function
+    by using del keyword we can remove specific list item
+    and pop() will only remove the last index's element
+"""
+"""
+Nested List
+Means List within a List
+"""
+l1 = [0,1,2]
+l2 = ['zero','one','two']
+l1.append(l2)
+print(l1[3][::-1])
 
 
 
