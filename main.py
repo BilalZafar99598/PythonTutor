@@ -634,10 +634,99 @@ Ans:
 Nested List
 Means List within a List
 """
-l1 = [0,1,2]
-l2 = ['zero','one','two']
-l1.append(l2)
-print(l1[3][::-1])
+# l1 = [0,1,2]
+# l2 = ['zero','one','two']
+# l1.append(l2)
+# print(l1[3][::-1])
+
+"""
+
+Packing vs Unpacking
+Packing
+"""
+
+# This is Packing
+list1 = ["zero","one","two","three",'0,1,2,3,4,5',"After-List"]
+
+# Unpacking
+# zero,one,two,three, *intList, afterlist = list1
+# print(type(list1))
+# print(one)
+# print(two)
+# print(three)
+# print(type(intList))
+# print(type(afterlist))
+
+"""
+Integer 
+Float
+String
+Boolean
+List
+
+"""
+
+"""
+In Boolean there are only two conditions either True or False
+
+False and True are keywords in Python
+ 
+ 
+"""
+
+# a = False
+# b = True
+# print(type(a),type(b))
+
+"""
+List Comprehension
+What is List Comprehension?
+Ans:
+    It is a ShortHand way to create a Python List.
+"""
+
+# listComprehension = [i for i in range(10)]
+# print(listComprehension)
+
+# emptyList = []
+# for i in range(15):
+#     emptyList.append(i)
+# print(emptyList)
+
+"""
+DataTypes
+String, Integer these are all for only single element 
+But for collection of elements we have a 4 datatypes
+
+list = [1,2,3,4,5,6]
+
+1. List
+2. Tulpe.
+3. Set.
+4. Dictionary.
+
+As we already discussed about List now we are discussing about Tuples
+
+Tuples are Immutuble it means we cannot change tuple data elements
+So tuples are ordered in nature and we can access elements by using index technique
+
+
+Tuple's Syntax:
+    Ans:
+        tuple1 = (1,2,3,4,5)
+
+
+"""
+# tuple1 = (1,2,3,4,5)
+"""
+How to create Tuple only contain single element
+"""
+# isTuple = ('"Bilal","Ali"',)
+# print(type(isTuple))
+# tuple1[0] = "one"
+
+# print(tuple1)
+# print(tuple1[0])
 
 
 
