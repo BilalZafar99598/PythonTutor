@@ -728,6 +728,71 @@ How to create Tuple only contain single element
 # print(tuple1)
 # print(tuple1[0])
 
+"""
+Tuples are Immutable means we cannot change
+if we want to change an element then 1st we will convert tuple into list and then changes and after changes we will
+back to tuple.
+B/c List allows us to change element
+"""
+
+# tuple1 = (0,1,2,3,4)
+# tuple2List = list(tuple1)
+# # print(type(tuple2List))
+# tuple2List[2] = "TWO"
+# # print(tuple2List)
+# # print(tuple(tuple2List))
+# backtoTuple = tuple(tuple2List)
+# print(backtoTuple)
+
+# del tuple1[4]
+# print(tuple1)
+
+# tuple0 = (0,1,2,3,4)
+# tuple1 = list(tuple0)
+# del tuple1[4]
+# print(tuple1)
+
+# l = list()
+# pass keyword
+
+# a = 50
+# if a>10:
+#     pass
+# b = 100
+# c = 150
+# print(a,b)
+
+"""
+Comparison Operators
+less than
+greater than 
+equal to
+not equal to
+greater than equal to
+less than equal to
+
+"""
+# a = 100
+# b = 150
+# if a>b:
+#     print("A is Greater Number")
+# else:
+#     print("B is Greater Number")
+
+"""
+enumerate() use to iterate over list and return list elements as well as index value.
+"""
+# animals = ["Cat",'Dog','Lion','Cheeta']
+# for index,value in enumerate(animals):
+#     print(f"At Index Number: {index} Element is: {value}")
+
+
+
+
+
+
+
+
 
 
 
