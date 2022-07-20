@@ -786,6 +786,49 @@ enumerate() use to iterate over list and return list elements as well as index v
 # for index,value in enumerate(animals):
 #     print(f"At Index Number: {index} Element is: {value}")
 
+"""
+in keyword in Python
+it is use for check the presence of any data
+or keyword 
+logical operators 
+AND and
+OR  or
+NOT not
+"""
+
+# names = ["Ali",'Omer','Khan','Saad']
+# if "ali" or "Ali" in names:
+#     print("Yes this name is available")
+# else:
+#     print("NO this is not available ")
+
+# ithNames = []
+# names = ["ali",'saad','khan','bilal']
+# for index,value in enumerate(names):
+#     if "i" in value:
+#         print("Yes have")
+#         ithNames.append(value)
+#     else:
+#         print("NOT")
+# print(ithNames)
+
+# # ithNames = []
+# names = ["ali",'saad','khan','bilal','jamal','kamal','adnan']
+# print("List Before Loop: ",names)
+# for index,value in enumerate(names):
+#     if "i" not in value:
+#         # List are Changable into uppercase
+#         names[index] = value.upper()
+#     # else:
+#         # del names[index]
+# print("List After Loop: ",names)
+
+
+
+
+
+
+
 
 
 
