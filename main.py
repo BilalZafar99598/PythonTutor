@@ -628,7 +628,7 @@ Differenece Between del and pop()
 Ans:
     del is keyword and pop() is a function
     by using del keyword we can remove specific list item
-    and pop() will only remove the last index's element
+    and pop() will only remove the last index's element.
 """
 """
 Nested List
@@ -822,6 +822,83 @@ NOT not
 #     # else:
 #         # del names[index]
 # print("List After Loop: ",names)
+
+"""
+Collection of Data.
+Unique elements.
+No duplication is allow
+NO Specific Order.
+
+
+{}
+Syntax:
+    set1 = {1,2,3,4,,5,6}
+"""
+
+# set1 = {'a','b','c','d','e','a'}
+# set1 = {250,1,2,53,4,5,6,7,8,94,94}
+# print(set1)
+
+"""
+Sets are different because there is no key value pair
+Dictionary
+It is use for key-value pair
+
+Syntax:
+    { key:value }
+"""
+
+# studentData = {"name":"Bilal","Age":25,"Position":"Software Engineer"}
+# print(studentData.items())
+
+"""
+Dictionaries Built-In methods
+values()
+items()
+keys()
+"""
+# print(studentData.keys())
+# print(studentData.values())
+# print(studentData.items())
+
+"""
+Add New Key Value Pair 
+"""
+
+# studentData["Country"] = "Pakistan"
+# print(studentData)
+
+"""
+
+How to Access data from Dictionary ?
+As we used Index number in list to access data from list but in dictionary we cannot use index number 
+we will keys to access Data.
+
+"""
+# print(studentData['Age'])
+
+# print(studentData.get("name"))
+# print(studentData)
+# print(studentData.pop("Bilal"))
+# print(studentData)
+
+"""
+
+How to change speicific value in Dictionary
+
+
+"""
+
+# studentData = {"name":"Bilal","Age":25,"Position":"Software Engineer"}
+# studentData["Position"] = "Python Teacher"
+# print(studentData)
+
+list1 = ["M","Na","i","Bil"]
+list2 = ["y","me","s","al"]
+print(["My","Name","is","Bilal"])
+
+
+
 
 
 
