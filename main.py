@@ -893,22 +893,142 @@ How to change speicific value in Dictionary
 # studentData["Position"] = "Python Teacher"
 # print(studentData)
 
-list1 = ["M","Na","i","Bil"]
-list2 = ["y","me","s","al"]
-print(["My","Name","is","Bilal"])
+# list1 = ["M","Na","i","Bil"]
+# list2 = ["y","me","s","al"]
+# print(["My","Name","is","Bilal"])
+
+"""
+Functions are two types 
+1. Biilt-in 
+2. User Define Functions
+
+What is difference between Function and Method?
+Ans:
+    Actually, Python not a prue OOP based language we can use it as a functional programming.
+    Function that use with OOP concepts is called a Method.
+    This is function
+    def add():
+            sdasda
+
+    class Calculator:
+    These are methods 
+    b/c functions written inside of a class
+        
+        Non-Parameterized Functions
+        def add1():
+            adasdassd
+        // This is function definition
+        def sub1():
+            asdasdasd
+            
+        If we want to utilize any function then we must call that function.
+        
+        sub1()    
+            
+        Parameterized Functions 
+        let say we have a sum function then we will pass 2 parameter or arguments to find solution.
+        
+        Q: Difference between parameters and arguments
+        Ans:
+            Parameters are dummy values that we pass while creating a function.
+            But Arguments are the real value or data that we pass to a function or method.
+            
+        When we define our function and values we pass that is parameters.
+        Example:
+            def sum(a,b)
+            c = a+b
+            :return c 
+            
+            print(sum(10,5))
+            
+    
+"""
+
+# def username(firstname, lastname):
+#     # print("My First Name is {} and Last Name is {}".format(firstname,lastname))
+#     print(f"My First Name is {firstname} and Last Name is {lastname}")
+#
+#
+# """
+# # This is the way to call a call
+# So why we call function b/c we want to execute it's functionality.
+# """
+# username(" Muhammad Bilal","Zafar")
 
 
 
+"""
+you use 5 parameterized function to find
+FUnctions must be parameterized.
 
+sum
+sub
+multiplication
+div
+modulus
 
+"""
 
+"""
+Iterate over the list and find each word which contains lenght 2 or more than and starting and ending character
+must be same. SO, count them total these words in list.
+"""
 
+# list1 = ["abc","abbbca","baacvb","faabbbf","ababbabab","ab","a"]
+# checkwords = []
+# counter = 0
+# for i in list1:
+#     if len(i) == 2 or len(i) > 2:
+#         if i[0] == i[-1]:
+#             counter +=1
+#             checkwords.append(i)
+# print(checkwords)
+# print("Total Words are",counter)
 
+"""
 
+Even: 2,4,6,8,10 etc....
+Odd: 1,3,5,7,9,11,13,15,17,19,21 etc....
+Prime 3,5,7,11,13,17,19,23,29 etc....
+Prime number is only divisible by itself. 13/13 == 0 15-- 5*3=15 15/3=5, 15/5=3
+21/7=3
 
+"""
 
+# n = int(input("Please Enter Number to Check Prime:"))
+# checker = False
+# for i in range(2,n):
+#     if n%i == 0:
+#         checker = True
+#         break
+# if checker == True:
+#     print(f"{n} is a Not Prime Number")
+#     # pass
+# else:
+#     print(f"{n} is PRIME Number")
+#     # pass
 
+# a = 210
+# b = 150
+# c = 50
+"""
+Find Greater Number amongs three values how ?
 
+"""
+# if a>b and a>c:
+#     print("A is greater")
+# elif b>a and b>c:
+#     print("B is greater")
+# else:
+#     print("C is greater")
+
+"""
+Libraries 
+built-In functionality we use libraries in programming languges.
+
+"""
+import os
+import pandas
 
 
 
