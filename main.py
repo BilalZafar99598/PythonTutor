@@ -1027,10 +1027,49 @@ Libraries
 built-In functionality we use libraries in programming languges.
 
 """
-import os
-import pandas
+# import os
+# import pandas
+
+"""
+Iterate over the list and find total Even, Odd and Prime number and separate them in each list.
+"""
 
 
+
+EvenOddPrime = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+evenList = []
+oddList = []
+primeList = []
+evenCounter = 0
+oddCounter = 0
+primeCounter = 0
+for ind,val in enumerate(EvenOddPrime):
+    if val%2==0:
+        # print("IF")
+        evenCounter +=1
+        evenList.append(val)
+    else:
+        oddCounter +=1
+        oddList.append(val)
+        n = len(oddList)
+        # print("N is ",n)
+        checker = False
+        for i in oddList:
+            if val%i == 0:
+                # print("if 1",i)
+                checker = True
+                if i in oddList:
+                    if i%2==1:
+                        continue
+                    else:
+                        primeList.append(val)
+                break
+
+
+print(evenList)
+print(oddList)
+print(primeList)
 
 
 
