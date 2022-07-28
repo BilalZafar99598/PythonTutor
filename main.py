@@ -994,7 +994,6 @@ Prime number is only divisible by itself. 13/13 == 0 15-- 5*3=15 15/3=5, 15/5=3
 21/7=3
 
 """
-
 # n = int(input("Please Enter Number to Check Prime:"))
 # checker = False
 # for i in range(2,n):
@@ -1044,39 +1043,152 @@ primeList = []
 evenCounter = 0
 oddCounter = 0
 primeCounter = 0
-for ind,val in enumerate(EvenOddPrime):
-    if val%2==0:
-        # print("IF")
-        evenCounter +=1
-        evenList.append(val)
-    else:
-        oddCounter +=1
-        oddList.append(val)
-        n = len(oddList)
-        # print("N is ",n)
-        checker = False
-        for i in oddList:
-            if val%i == 0:
-                # print("if 1",i)
-                checker = True
-                if i in oddList:
-                    if i%2==1:
-                        continue
-                    else:
-                        primeList.append(val)
-                break
+
+# checker = False
+# for ind,val in enumerate(EvenOddPrime[2:]):
+#     # print(val)
+#     for i in range(2,val):
+#         if val%i==0:
+#             # print(val)
+#             checker = True
+#             break
+#         elif checker == True:
+#             pass
+#         else:
+#             print(val)
+            # else:
+        #     print(val)
+        #     break
+    #     # else:
+    #     #     print("Not")
+    # if checker == True:
+    #     print("Not Prime")
+    # else:
+        # print("Prime")
+        # primeList.append(val)
+# print(evenList)
+# print(oddList)
+# print(primeList)
 
 
-print(evenList)
-print(oddList)
-print(primeList)
+# EvenOddPrime = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# lower = EvenOddPrime[0]
+# upper = EvenOddPrime[-1]
+
+# print("Prime numbers between", lower, "and", upper, "are:")
+# evenList = []
+# oddList = []
+# primeList = []
+# for num in range(lower, upper + 1):
+#    # all prime numbers are greater than 1
+#     if num > 1:
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 break
+#         else:
+#             # print(num)
+#             primeList.append(num)
+#
+#     elif num%2 == 0:
+#         evenList.append(num)
+#
+#     else:
+#         oddList.append(num)
+#
+# print(primeList)
+
+# list1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# for num in range(list1[0],list1[-1]+1):
+#    for i in range(2,num):
+#        if num%i==0:
+#            break
+#    else:
+#        print(num)
+#
+
+# def sum(x):
+#     return x+1
+# print(sum(2))
+
+# x = lambda a:a+1
+# # print(x(2))
+# sum = x
+# print(sum(4))
+
+# list1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# n = []
+# for num in range(list1[0], list1[-1] + 1):
+#    if num > 1:
+#        for i in range(2, num):
+#            if (num % i) == 0:
+#                break
+#        else:
+#            # print(num)
+#            n.append(num)
+# print(n)
+# randomList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# empty = []
+# primeCounter = 0
+# primeChecker = False
+# for num in range(randomList[0],randomList[-1]+1):
+#     # print(num)
+#     if num > 1:
+#         for i in range(3,num):
+#             if num%i == 0:
+#                 break
+#         else:
+#             # print(num)
+#             # if num == 2:
+#             #     continue
+#             # else:
+#             #     empty.append(num)
+#             if num!=2:
+#                 primeChecker = True
+#                 primeCounter += 1
+#                 empty.append(num)
+# print(empty)
+# print(primeCounter)
+
+# tuples
+# tuple1 = ("abc",)
+# print(type(tuple1))
+
+"""
+String Variables and String Literals
+"""
+#
+# name = "Bilal Zafar"
+# print(type(name))
+#
+# num = 50
+
+"""
+
+Here name is a string variable but "Bilal Zafar" is a String Literals 
+In other words our real data is called a String Literals.
+
+"""
 
 
+# def add(a,b):
+#     return a+b
+#
+# sumFunc = add
+# print("Sum is: ",sumFunc(55,15))
 
 
+"""
+This is a Lambda Function use for short time period.
+If we want to use logic without creating Function Name then we will use Lambda Function
+Anoynomous Function
+for using Lambda function we must use lambda keyword.
+"""
+# sum = lambda a,b:a+b
+# print("Sum is :",sum(45,15))
 
+# mul = lambda x:x*x
+# print(mul(5))
 
-
-
-
-
+# def mul(x):
+#     return x*x
+# print(mul(5))
