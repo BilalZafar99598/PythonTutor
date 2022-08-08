@@ -1192,3 +1192,323 @@ for using Lambda function we must use lambda keyword.
 # def mul(x):
 #     return x*x
 # print(mul(5))
+
+"""
+
+Parameterzied Functions
+
+"""
+
+# def add(a,b):
+#     return a+b
+# print(add(5,10))
+
+# def add(a,b):
+#     return a+b
+# print(add(5,10,15,6))
+
+"""
+Non Keywords Arguments
+*args
+"""
+
+"""
+When Number of Arguments are Unknown then we will use Non-Keyword Arguments
+Is it mandatory always use *args ?
+Ans:
+    No, args is just like a Variable it's user define.
+
+"""
+
+
+# def addNumber(*tupleOfValues):
+#     print(type(tupleOfValues))
+#     sum = 0
+#     for n in tupleOfValues:
+#         # sum = sum+n
+#         sum +=n
+#     return sum
+# print(addNumber(10,15,15,50,100,33,112,55,33,55))
+
+
+# n = 10,15,15,50,100,33,112,55,33,55
+# print(type(n))
+
+"""
+Keywords Arguments
+**kwargs
+
+kwargs is a user-define.
+
+"""
+# def userData(**stdRecord):
+# def userData(**stdRecord):
+#     print(type(stdRecord))
+#     for keys,values in stdRecord.items():
+#         print(f"{keys} is {values}")
+# userData(FirstName="Bilal",Age=26,Education="BSCS")
+
+# std = {}
+# std["Name"] = "Ali"
+# std["Age"] = 30
+# print(std)
+
+"""
+Find Maximum value from list
+"""
+# l = [3,5,77,44,6,4,33]
+# print(max(l))
+
+# def checkMax(list1):
+#     print(type(list1))
+#     m = 0
+#     for i in list1:
+#         if i > m:
+#             m = i
+#     return m
+#
+# print(checkMax([33,44,22,155,2,56,100]))
+
+
+# def checkMin(list1):
+#     print(type(list1))
+#     m = list1[0]
+#     for i in list1:
+#         if i < m:
+#             m = i
+#     return m
+# print(checkMin([33,44,22,155,2,56,100,1,-10000]))
+
+"""
+"""
+
+list1 = ['P','Y','T','H','O','N']
+"""
+Output:
+        PYTHON
+"""
+# for i in list1:
+#     print(i)
+"""
+Built-in Functions
+"""
+# str1 = ''.join(list1)
+# print(str1)
+
+"""
+Find the Differences between 2 lists 
+[3,4,3,5,5,6]
+[33,55,22,77,55,66]
+By using List Comprehension way
+"""
+
+# list1 = [i for i in range(15)]
+# list2 = [j for j in range(0,20,3)]
+#
+# diff1 = list(set(list1)-set(list2))
+# diff2 = list(set(list2)-set(list1))
+#
+# res = diff1+diff2
+# print(list1)
+# print(list2)
+# print(res)
+
+# StudentRecord = {"Name":[],"Age":[],"Education":[],"Gender":[]}
+# StudentRecord["Name"] = ["Ali","Omer","Khan"]
+# StudentRecord["Age"] = [20,14,15]
+# StudentRecord["Name"] = ["Ali","Omer","Khan"]
+#
+# print(StudentRecord)
+
+
+# names = []
+# age = []
+#
+# StudentRecord = {"Name":names,"Age":age,"Education":[],"Gender":[]}
+# userName = input("Please Enter Your Name")
+# names.append(userName)
+# print(StudentRecord)
+
+"""
+Variable's Scope
+                1. Global Variable's Scope 
+                2. Local ... Scope
+                
+"""
+# Here Number is a Global Variable
+# number = 5
+# def func():
+#     # Here number is Local Variable
+#     global number
+#     number = 10
+#     return number
+# # print("Number Outside of Function is: ",number)
+# print("Inside Func is: ",func())
+# print("Outside of Func Number",number)
+
+
+# # a = 10
+# def check():
+#     global a
+#     a = 20
+#     print("Inside is: ",a)
+# check()
+# print("Ouside A is: ",a)
+
+
+
+"""
+Data Analysis 
+Web Development with Python
+HTML,CSS,BOOTSTRAP,JAVASCRIPT,PYTHON
+"""
+
+"""
+map() and filter()
+Built-In functions
+these are use to achieve Functional Programming 
+
+user-define and iterable object
+list, tuple
+
+def display():
+lambda function
+Nameless function
+map(function,list)
+
+High Order Functions
+builtin 
+userdefine
+parameterized
+without para
+lambda
+What is High Order Function?
+Ans:
+	In High Orde Functions we pass a Funcion as a Parameter to another Function.
+
+here a and b are variables.
+def sum(a,b):
+	return a+b
+
+
+
+map() filter()
+
+"""
+
+
+# def f(n):
+# 	if n>3:
+# 		return n
+# 	# else:
+# 	# 	return "Not Greater than 3"
+# y = filter(f,(1,2,3,4,5,67,0))
+#
+# print(y)
+# print(list(y))
+
+
+"""
+Python Functions are also High Order Function.
+How we can use Parameterized Functions.
+when we will pass a Function as a Parameter to any other function is called a High Order Function.
+
+Programming Paradigm 
+Functial Programming 
+Procedurals Programming
+OOP Programming
+
+
+# By Default Python is not a OOP based Programming we can make them OOP based by using Class and Object
+# Concept
+By Default Python is not a Functional Programming
+How we can make a Python Functional Programming. We can use map() and filter() builtin functions 
+
+map and filter function's Syntax:
+		
+		1. What is function.
+		2. Parameterized Function.
+		3. Iterable Object. List, Tuple, Dictionary,Set in other words collect of data is called iterable objects
+		4. High Order Functions.
+		5. How to pass Function as a Parameter	
+			
+		map(function_name,iterable_Object)
+
+"""
+
+# def message(text):
+# 	return text
+#
+# print(message("Hello Everyone"))
+
+
+
+
+
+
+# def f(n):
+# 	if n>3:
+# 		return n
+# 	# else:
+# 	# 	return "Not Greater than 3"
+# y = filter(f,(1,2,3,4,5,67,0))
+#
+# print(y)
+# print(list(y))
+
+
+# Functional Programming
+# def function(number):
+#     if number > 3:
+#         return number
+#     else:
+#         return "Less than 3"
+# # map(function_name,iterable_Object)
+# y = map(function,(1,2,3,4,5,6,0,3,35))
+# # print(y)
+# print(list(y))
+
+# Assignment
+# What are Programming Paradigm In Python ?
+
+
+"""
+
+Python Functiona are also called a 
+First Class Citizen Object.
+In other words we can assign Function to a Variable or Return Funtion as well is called a 
+"""
+
+# Data Analysis
+#
+# def sum(a,b):
+#     add = a+b
+#     return add
+#
+# adder = sum
+# print(adder(10,4))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
