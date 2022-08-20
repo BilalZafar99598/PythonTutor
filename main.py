@@ -1488,6 +1488,95 @@ In other words we can assign Function to a Variable or Return Funtion as well is
 # adder = sum
 # print(adder(10,4))
 
+# a,b,*c = [1,2,3,4,5,6,7]
+#
+# print(a,b,c)
+
+# Exception Handling
+# Keywords try,catch
+"""
+To handle Errors where our code crash then we can find alternate
+"""
+# try:
+#     a = 10
+#     # b = 15
+#     print(b)
+# except NameError:
+#     print("B is not define so please check this data")
+
+"""
+Iterators In Python 
+Iterators and Iterable are 2 different things.
+Iterables Objects list, tuple etc...
+iterators.
+
+"""
+# nums = ['zero','one','two','three','four','five']
+# for i in nums:
+#     print(i)
+
+"""
+Two built-in functions iter() and next()
+"""
+# try:
+# nums = ['zero', 'one', 'two', 'three', 'four', 'five']
+# nextElement = iter(nums)
+# print(type(nextElement))
+# print(next(nextElement))
+# print(next(nextElement))
+# print(next(nextElement))
+# print(next(nextElement))
+# print(next(nextElement))
+# print(next(nextElement))
+# print(next(nextElement))
+# # except StopIteration:
+# #     print("Iteration is Out of Range")
+
+
+"""
+Functions 
+1.High Order Functions.
+2. First Class Citizen
+
+
+1.we can assign a function to a variable and use that variable as a function.
+2. We can use one function to another Function.
+3. We can return function within a function.
+4. High Order Functions
+    We can pass a Function as a Parameter to another Function is called a High Order Function.
+
+
+"""
+# def sum(a,b):
+#     add = a+b
+#     return add
+#
+# # print(sum(5,10))
+# # We use function without parenthese so it means we pass a refernce of function to adder variable.
+# adder = sum
+# print(adder(14,6))
+
+# Define Function within a Function OR Nested Function.
+# def display(): # Outer Function.
+#     def giveData(): # Inner Function
+#         a = 10
+#         b = 15
+#         add = a+b
+#         print(add)
+#     return giveData()
+# display()
+
+
+# Decorators.
+"""
+1. Parameterized Function.
+2. High Order Function.
+3. First Class Citizen
+What are decorators:
+We can change logic of our function without changing it's code.
+
+
+"""
 
 
 
@@ -1496,6 +1585,170 @@ In other words we can assign Function to a Variable or Return Funtion as well is
 
 
 
+# def uppercase_decorator(function):
+#     def wrapper():
+#         func = function()
+#         make_uppercase = func.upper()
+#         return make_uppercase
+#
+#     return wrapper
+#
+# def say_hi():
+#     return 'hello there'
+#
+# decorate = uppercase_decorator(say_hi)
+# print(decorate())
+
+# def sum(function):
+#     def wrapper():
+#         sum = 0
+#         func = function()
+#         # print("here ",func)
+#         for i in func:
+#             sum +=i
+#         print(sum)
+#     return wrapper
+#     # print(wrapper)
+#
+# @sum
+# def data():
+#     return [2,34,4,5,6,7,8]
+#
+# data()
+# # decorator = sum(data)
+# # print(decorator())
+
+# def sum(function):
+#         sum = 0
+#         func = function()
+#         # print("here ",func)
+#         for i in func:
+#             sum +=i
+#         return sum
+#     # print(wrapper)
+# # @sum
+# def data():
+#     return [2,34,4,5,6,7,8]
+# print(sum(data))
+# data()
+
+# This Function will accept function as a parameter
+# def sum(function):
+#     def inner():
+#         sum = 0
+#         func = function()
+#         print(func)
+#         for i in func:
+#             sum += i
+#         print(sum)
+#     return inner
+#
+# @sum
+# def OriginalFunc():
+#     return [2,5,12,3,8]
+# # print(sum(OriginalFunc))
+# OriginalFunc()
+
+
+
+#
+# def sum(function):
+#     def wrapper():
+#         sum = 0
+#         func = function()
+#         print("here ",func)
+#         for i in func:
+#             sum +=i
+#         print(sum)
+#     return wrapper
+#     # print(wrapper)
+#
+# @sum
+# def OriginalData():
+#     return [2,34,40,5,6,7,8]
+# OriginalData()
+# # decorator = sum(data)
+# # print(decorator())
+
+"""
+Decorators:
+    We can change logic of function without changing it's code.
+        1. Parameterized Function.
+        2. High Order Functions.
+        3. First Class Citizen 
+
+        2. HOF. Pass one function to another function as a Parameter.
+        3. FCC. 
+            We can assign a function to a variable.
+            We can define a Function in another Function. In simple words, this is called a Nested Function. 
+            We can return function within a function.
+"""
+
+# def sum(function):
+#         sum = 0
+#         func = function()
+#         # print("here ",func)
+#         for i in func:
+#             sum +=i
+#         return
+#     # print(wrapper)
+#
+# # @sum
+# def data():
+#     return [2,34,4,5,6,7,8]
+#
+# sum(data)
+# # data()
+
+"""
+Professionally we use decorator with @ symbol
+"""
+
+# Actually function() is a data() function.
+# def sumDeco(function):
+#     add = 0
+#     dummyFunction = function()
+#     # print(type(dummyFunction))
+#     for adder in dummyFunction:
+#         add +=adder
+#     return print(add)
+#     # print(add)
+#
+# @sumDeco
+# def data():
+#     return [3,5,22,4,5]
+
+# sumDeco(data)
+
+"""
+Data Structures
+Q: What is a Data Structures:
+Ans:
+    We can implement Data structures using programming languages. We will implement in Python.
+    In simple words, we can arrange our data in an organized way.
+    1. Stack.
+    2. Queue.
+
+    List is a Default Data Structure of a Python, Tuple, Set, Dictionary 
+
+    Difference between Data Structures and Data Type.
+    Int, String, 
+
+    Stack follow the LIFO rule, structure. 
+    What is LIFO?
+    Last in First Out
+
+    We will implement Stack in Python by using a List.
+
+"""
+
+# Stack = []
+# Stack.append('a')
+# Stack.append('b')
+# Stack.append('c')
+# print(Stack)
+# Stack.pop()
+# print("Stack after POP operation: ",Stack)
 
 
 
